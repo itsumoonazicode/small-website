@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
   background-image: url(images/common/morocco/morocco.png);
@@ -52,6 +56,74 @@ img {
   text-shadow: 3px 3px 0 #9db;
   -webkit-text-stroke: 1px #888;
   text-stroke: 1px #888;
+}
+
+.switch-menu {
+  background-color: #fff;
+  height: 64px;
+}
+
+.switch-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.switch-menu ul > li {
+  text-align: center;
+}
+
+.switch-menu ul > li + li {
+}
+
+.switch-menu ul > li > a {
+  padding: 10px 20px;
+  margin: 0 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+  transition-property: all;
+  width: 100%;
+  display: block;
+  color: #060606;
+}
+
+.switch-menu ul > li > a:hover {
+  color: #fff;
+  background-color: #247dbe;
+}
+
+/* リストの横に縦のドット線を出す */
+
+.switch-menu ul > li {
+  display: flex;
+  align-items: center;
+}
+
+.switch-menu ul > li:before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 34px;
+  background-image: radial-gradient(#333 30%, transparent 0);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 4px 4px;
+}
+
+.switch-menu ul > li:last-of-type:after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 34px;
+  background-image: radial-gradient(#333 30%, transparent 0);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 4px 4px;
 }
 
 .daily-photo {
