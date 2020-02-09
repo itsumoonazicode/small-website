@@ -1,0 +1,112 @@
+body {
+  height: 100vh;
+  background-image: url(images/common/morocco/morocco.png);
+  margin: 0;
+}
+body {
+  font-size: 24px;
+}
+
+figure {
+  margin: 0;
+}
+
+main {
+  margin-right: auto;
+  margin-left: auto;
+  width: 900px;
+  margin-bottom: 40px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+img {
+  width: 100%;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.site-title {
+  text-align: center;
+}
+
+.fuchidori {
+  font-weight: bold;
+  font-size: 70px;
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 3px 3px 0 #cd5;
+  -webkit-text-stroke: 1px #888;
+  text-stroke: 1px #888;
+  padding: 0 0 10px;
+}
+
+.fuchidori2 {
+  font-weight: bold;
+  font-size: 60px;
+  color: rgba(0, 0, 0, 0);
+
+  text-shadow: 3px 3px 0 #9db;
+  -webkit-text-stroke: 1px #888;
+  text-stroke: 1px #888;
+}
+
+.daily-photo {
+  height: 360px;
+  object-fit: cover;
+}
+
+.footer-sitemap {
+  background-image: url(images/common/darkness/darkness.png);
+  min-height: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-sitemap,
+.footer-sitemap a {
+  color: #fff;
+}
+
+.footer-sitemap a {
+  text-decoration: none; /* リセット */
+}
+
+.footer-sitemap > ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-sitemap > ul > li:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.footer-sitemap a {
+  border-bottom: 1px solid #fff;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-sitemap a:hover {
+  border-bottom: transparent;
+}
+
+.footer-sitemap p {
+  text-align: center;
+}
+
+.footer-sitemap small {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+}
